@@ -1,0 +1,20 @@
+Chris Russell
+9/15/2024
+CSC320 Module 1 Option 1
+Prints first name, last name, and address of fictional person.
+
+Start program
+
+    Set firstName to "John"
+    Set lastName to "Doe"
+    Set address to "123 Somewhere Ln"
+    Set city to "Nowhere, CO"
+    Set zipCode to "12345"
+
+    Print firstName
+    Print lastName
+    Print address
+    Print city
+    Print zipCode
+
+End Program
