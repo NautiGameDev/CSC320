@@ -1,0 +1,24 @@
+Chris Russell
+9/28/2024
+CSC320 Module 3 Option 1
+
+Retrieves weekly income and calculates the taxwitholdings.
+
+Start Program  
+
+    Set input variable to scanner
+    Instantiate income and tax floating variables
+    Get users weekly income via input
+    Test conditions of weekly income based on defined tax brackets
+        If weekly income is less than $500
+            Set tax variable to income x 10%
+        Else if weekly income is greater than $500 and less than $1500
+            Set tax variable to income x 15%
+        Else if weekly income is greater than $1500 and less than $2500
+            Set tax variable to income x 20%
+        Else if weekly income is greater than or equal to $2500
+            Set tax variable to income x 30%
+    Round weekly taxwitholdings to 2 decimal places
+    Print weekly taxwitholdings
+
+End Program
