@@ -1,0 +1,92 @@
+Chris Russell
+10/5/2024
+CSC320 Module 4 Option 1
+
+Retrieves 5 inputs from the user and calculates the Total, Average, Max, Min, and Interest at 20%
+
+Start Program
+	Program set-up
+		Initiate scanner object
+		Create integer variable to set the number of inputs (Default to 5)
+		Create float variable for interest % (Default to 20% or 0.2f)
+		Create an array of floats to store user inputs, set size of array to number of inputs
+
+	Program loop
+		Create Boolean called isRunning set to true
+		Create while loop to run continuously while isRunning is true
+		Print line to console explaining the program ("User to enter 5 numbers")
+		
+		Get user inputs
+			Initialize i at 0 to represent for loop index
+			For loop if i is less than then number of inputs established in program set-up
+				Call method GetInputs()
+					Create Boolean called isInputValid set to false
+					Create while loop to run while isInputValid is false
+					Establish try-catch to retrieve user input
+						Try user input is float
+							if input is valid 
+								Store user input in userInputs float array at index in for loop
+								set isInputValid to true to close whileloop
+						Catch user input is not valid
+							Print statement informing user the input isn't valid
+							Repeat while loop until a valid number is entered
+
+		Calculate total
+			Create float variable called total and call method to calculate the total of user inputs
+				Initialize total at 0
+				Initialize i at 0 for for-loop index
+				Create a for loop to execute block of code while index is less than the length of userInputs array
+					Add each value in userInputs array to the total
+				Return total
+
+		Calculate average
+			Create float variable called average and call method to calculate the average
+				Create average variable set to the total divided by the length of user inputs
+				return average
+
+		Calculate maximum
+			Create float variable called maximum and call method to find the maximum input value
+				Create float variable called Maximum set to 0
+				Initialize i at 0 for for-loop index
+				Create for loop to execute block of code while index is less than the length of userInputs array
+					if input value at array index is greater than maximum value, set maximum value equal to input value
+				return Maximum Number
+
+		Calculate minimum
+			Create float variable called minimum and call method to find the minimum input value
+				Create float variable called minimum and set to total value of all inputs
+				Initialize i at 0 for for-loop index
+				Create for loop to execute block of code while index is less than length of userInputs array
+					if input value at array index is less than minimum variable, set minimum value equal to input value at array index
+				return Minimum
+
+		Calculate interest
+			Create float variable called interest and call method to calculate interest value
+				Create float value set to the total of all input values multiplied by program's interest value (default 20%)
+				return interest value
+
+		Print all calculated values
+			Print total value of user inputs to console
+			Print average of user inputs to console
+			Print maximum value of user inputs to console
+			Print minimum value of user inputs to console
+			Print interest value of user inputs to console
+
+		Repeat or Close program
+			Set Boolean isRunning to returned value of function that retrieves new user input
+				Initialse Boolean called isInputValid to check if new input is valid set to false
+				Create a while loop that repeats if input is not valid
+				Print message to console asking user to enter Y to repeat program, or N to close program
+				If input is N
+					set Boolean isInputValid to true
+					return false
+				Else if input is Y
+					set Boolean isInputValid to true
+					return true
+				Else
+					Print line to console stating the user input is invalid
+			If Boolean isRunning returns as false
+				Close program
+			If Boolean isRunning remains true
+				Repeat program
+				
