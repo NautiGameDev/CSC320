@@ -1,0 +1,70 @@
+Chris Russell
+10/12/2024
+CSC320 Module 5 Option 1
+
+Retrieves user input of a day or "week" and prints out the average temperature requested.
+
+Start Program
+
+    Program Set-up
+        Instantiate Scanner called userInput.
+	Instantiate Random called random.
+	Create String array called days with values set to names of each day.
+	Create integer array called dailyTemps set to a size of 7.
+	    Call method to randomly generate temperatures.
+	        Create empty integer array called temperatures set to size 7.
+		Create integer called baseTemp set to 60.
+		Create integer called maxTemp set to 30.
+		For loop to loop through each value in temperatures array.
+		    Generate random number between 0 and 30, then add to 60. (Gets temp between 60-90 degrees)
+		    Set value in temperatures array at index i to randomly generated number.
+		    Return temperatures array.
+	Instantiate Boolean called programRunning set to true.
+	Create while loop based on condition programRunning.
+
+    Program loop
+	Print line to console providing user instructions to enter day of week or week, or Q to exit.
+	Instantiate Boolean called isInputValid set to false.
+	
+	Create while loop with condition isInputValid is false.
+	    Get user input set to String called userPrompt.
+	    Instantiate integer temperatureOutput that calls method to get daily temperature.
+		Instantiate integer called temperature set to 0.
+		Create for loop based on length of days array.
+		    Test if value at index i of days array is equal to user prompt.
+			If true, set temperature variable to value at index i of dailyTemps array.
+            Return temperature to main program loop
+
+	If returned value of temperatureOutput is not 0
+	    Print message displaying day and the value of temperatureOutput (average temperature)
+	    Set isInputValid to false to exit input loop.
+
+	Else if userPrompt equals "week"
+	    Call method to get weekly temperatures.
+		Instantiate integer called tempTotal set to 0.
+		For loop based on length of days array.
+		    Print message to console for each day stating the day of the week and the average temperature for that day.
+		    Add daily average temperature to tempTotal variable.
+		Calculate average weekly temperature by dividing tempTotal by the size of days array.
+		Print Average weekly temperature to the console.
+
+	Else if user input equals "Q"
+	    set Program running to false to exit main program loop
+	    Return to exit input loop
+	
+	Else (Input is invalid)
+	   print message to console stating the input is invalid
+
+	Set programRunning to returned Boolean of method asking user to repeat program
+	    Print message to console asking user to enter Y or N to repeat the program again with a new parameter.
+	    Instantiate Boolean titled isInputValid set to false
+	    Create while loop based on condition isInputValid is false.
+	        Get user input as string.
+		If user input equals "Y"
+                    Return true
+                else if user input equals "N"
+                    Return false
+                else
+                    Print message to terminal informing the user the input is invalid.
+
+		
