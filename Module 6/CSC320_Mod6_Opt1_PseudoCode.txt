@@ -1,0 +1,53 @@
+Stores and handles data for car object that would be created and managed from main program
+
+Initialize Class
+    Create public string called Make
+    Create public string called model
+    Create public string called color
+    Create public string called style
+    Create public int called year
+    Create public int called mileage
+    Create public int called mpg
+
+Car construct
+   Purpose: Assign values to variables at the creation of Car class within main program.
+    Accept parameters for make, model, color, style, year, mileage, and mpg
+    Set class variables equal to each parameter
+
+Set car information method
+    Purpose: Update variable in class based on user inputs
+   Accept string parameters for user option and new input
+   Test condition of option if equal to make, model, color, style, year, mileage, or mpg.
+   For string datatype, set class variables equal to new input.
+   For integer datatype, send string to method that converts string to integer and returns int value
+        Pass user input, make, model, and previous value of targeted variable
+        If value can be converted, assign new value to variable in car class.
+        Else display error message
+
+Convert Int to String Method
+    Purpose: Test if user input can be converted to integer before assigning as value to a variable within the class.
+    Accept parameters user input, make, model, and previous value
+     Try:
+         Convert user input to integer
+         Return value
+    Catch:
+        Pring message to screen stating “Failed to update *make* *model*
+        Return previous value
+
+Get Car Information method
+    Purpose: print stored vehicle information to terminal based on requested parameters from the user.
+    Accept string datatype of parameters
+    Parse parameters into a string list
+    For each parameter in parameters:
+        If parameter is equal to name of variable in class (Example: make, model, color, style, etc.)
+             Print to terminal variable name and variable value (Example: Make: *make*)
+       Else if parameter doesn’t match variable name
+            Print to terminal the entered parameter is invalid.
+
+Test for removal method
+    Purpose: Test if input make, model, and color from user match the data within class. Return true to main program loop to remove vehicle.
+    Accept parameters for make, model, color, and year
+    If make, model, and color are all equal to make, model, and color values of class
+         Return true
+    Else
+         Return false
