@@ -1,0 +1,6 @@
+1985 Ford Ranger :: Color: Blue :: Mileage: 150000
+1979 BMW 320i :: Color: Yellow :: Mileage: 180000
+1997 Chevy Cavalier :: Color: White :: Mileage: 140000
+2002 Audi A4 :: Color: Green :: Mileage: 105000
+2008 Honda Civic :: Color: Black :: Mileage: 156000
+2008 Cadillac CTS :: Color: Black :: Mileage: 143000
